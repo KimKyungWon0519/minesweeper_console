@@ -10,6 +10,11 @@ void showEmyptAllRood(int x, int y);
 
 int mapState[MAPSIZE][MAPSIZE] = { 0, };
 
+void initConsoleSetting() {
+	system("chcp 65001");
+	system("cls");
+}
+
 void clickRemoveMineSweeper() {
 	if (mapState[position.y][position.x] == NONE) {
 		setCursorPosition(position.x * 2, position.y);
@@ -97,6 +102,7 @@ void setMouseInput() {
 }
 
 void initGame() {
+	initConsoleSetting();
 	printBG();
 	setMineSweeper();
 	setMineSweeperCount();

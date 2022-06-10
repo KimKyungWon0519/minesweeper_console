@@ -40,6 +40,7 @@ int leftRoomCount;
 int usedFlagCount;
 
 void initGame();
+void initConsoleSetting();
 DWORD onClickEvent();
 void clickMineSweeper();
 void setCursorPosition(int x, int y);
